@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY DREAM HOUSE FCM.41.008.240.23</title>
+    <script src="script/aframe.min.js"></script>
+
+    <script src="script/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <!--Main Villa-->
+            <a-asset-item id="house" src="Models/scene.gltf"></a-asset-item>
+            <a-asset-item id="sky" src="Models/free_-_skybox_above_the_clouds/scene.gltf"></a-asset-item>
+        </a-assets>
+
+        <a-entity gltf-model="#house" position="0 4 0" scale="25 25 25"></a-entity>
+        <a-entity gltf-model="#sky" scale="20 20 20" position="1 1 1"></a-entity>
+
+        <a-entity gltf-model="#house" position="0 0 0" scale="25 25 25" normal-map></a-entity>
+        <a-plane src="Texture/beau-carpenter-7n0htRBTHqU-unsplash.jpg" width="10000" height="10000" rotation="-90 30 -1089" repeat="100 100 100"></a-plane>
+
+        <a-camera position="151 80 909"></a-camera>
+
+    </a-scene>
+</body>
+</html>
